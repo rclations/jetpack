@@ -193,9 +193,9 @@ class Jetpack_Testimonial {
 	 * Add to REST API post type whitelist
 	 */
 	function allow_cpt_rest_api_type( $post_types ) {
-	    $post_types[] = self::CUSTOM_POST_TYPE;
+		$post_types[] = self::CUSTOM_POST_TYPE;
 
-	    return $post_types;
+		return $post_types;
 	}
 
 	/**
@@ -381,8 +381,8 @@ class Jetpack_Testimonial {
 	 */
 	function query_reading_setting( $query ) {
 		if ( ! is_admin()
-		    && $query->is_main_query()
-		    && $query->is_post_type_archive( self::CUSTOM_POST_TYPE )
+			&& $query->is_main_query()
+			&& $query->is_post_type_archive( self::CUSTOM_POST_TYPE )
 		) {
 			$query->set( 'posts_per_page', get_option( self::OPTION_READING_SETTING, '10' ) );
 		}
