@@ -3407,6 +3407,66 @@ a.what-is-primary {
   left: 8px;
 }
 
+.jetpack-connect__modal {
+  background: rgba(234, 240, 244, 0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+.jetpack-connect__modal .jetpack-connect__logo {
+  background: url(../images/jetpack-logo.svg) 544px center no-repeat;
+  display: block;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  left: -272px;
+}
+.jetpack-connect__modal .jetpack-connect__message {
+  margin: 7em auto;
+  width: 100%;
+  max-width: 660px;
+  text-align: center;
+}
+.jetpack-connect__modal .jetpack-connect__title {
+  font-size: 28px;
+  line-height: 100%;
+}
+.jetpack-connect__modal .jetpack-connect__subtitle {
+  margin-top: 16px;
+  line-height: 100%;
+  color: #686f72;
+}
+.jetpack-connect__modal .actions {
+  margin-top: 44px;
+}
+.jetpack-connect__modal .actions a {
+  padding: 16px 96px;
+  height: inherit;
+  font-size: 16px;
+}
+.jetpack-connect__modal .jetpack-connect__dismiss {
+  width: 100%;
+  position: fixed;
+  bottom: 166px;
+  left: 0;
+  z-index: 9;
+}
+.jetpack-connect__modal .jetpack-connect__dismiss a {
+  color: #686f72;
+  text-decoration: none;
+}
+.jetpack-connect__modal .jetpack-connect__footer {
+  background: url("../images/the-cloud.svg") center top repeat-x;
+  width: 100%;
+  height: 200px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 @media (max-width: 1147px) {
   .jp-content .landing {
     padding: 0 2em;
